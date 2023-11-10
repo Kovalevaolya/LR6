@@ -88,6 +88,13 @@
 |:---:|
 | *картинка 13* |
 
+### **15**
+
+*Получение истории операций в форматированном виде.*
+| ![15](screenshots/pic_15.png) |
+|:---:|
+| *картинка 15* |
+
 ### **Последовательность команд в порядке выполнения:**
 
 ```bash
@@ -120,4 +127,5 @@ git commit -m "Добавлены изменения в new_file.txt"
 git revert HEAD
 git log
 git switch --create report_by_Olya
+git log --pretty=format:"%Н %cd %an %s"
 ```
