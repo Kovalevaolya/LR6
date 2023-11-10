@@ -87,3 +87,37 @@
 | ![13](screenshots/pic_13.png) |
 |:---:|
 | *картинка 13* |
+
+### **Последовательность команд в порядке выполнения:**
+
+```bash
+git --version
+git config --global user.name "4216 Kovaleva O. Y."
+git config --global user.email "kovaleva.olga.2004@gmail.com"
+git config --list
+git clone https://github.com/Kovalevaolya/LR6
+cd LR6
+git pull
+git switch Kovalevaolya-patch-1
+git switch master
+git log
+git switch Kovalevaolya-patch-1
+git log
+git switch master
+git pull origin master
+git merge Kovalevaolya-patch-1
+git branch -d Kovalevaolya-patch-1
+git push origin --delete Kovalevaolya-patch-1
+mv ./new_file ./new_file.txt
+git add new_file.txt
+git status
+git add .
+git status
+git commit -m "Добавлено расширение .txt"
+git add new_file.txt
+git status
+git commit -m "Добавлены изменения в new_file.txt"
+git revert HEAD
+git log
+git switch --create report_by_Olya
+```
